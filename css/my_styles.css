@@ -35,10 +35,14 @@
 
 #about{
     background-color: #ffae00f1;
-    height: 75vh;
+    height: 85vh;
 }
 .bg-primary {
     background-color: #ffd76b !important;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption{
+  background-color: #FCBB42 !important;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
