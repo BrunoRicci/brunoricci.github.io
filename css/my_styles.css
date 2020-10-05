@@ -33,9 +33,28 @@
     /* height: 100vh; */
 }
 
+.portfolio-item{
+  /* border: 1px solid black; */
+  box-shadow: 0px 3px 8px #00000083;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{
+  height: 60px;
+  width: 60px;
+  box-shadow: 1px 1px 2px black;
+  background-size: 100%, 100%;
+  border-radius: 10%;
+  /* background-image: none; */
+  background-color: #00000034;
+  align-content: center;
+}
+
+
+
 #about{
     background-color: #ffae00f1;
-    height: 85vh;
+    height: 100vh;
 }
 .bg-primary {
     background-color: #ffd76b !important;
