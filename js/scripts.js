@@ -64,6 +64,23 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
+
+    $(document).ready(function(){
+      console.log('document load ready.');
+      
+      var search = $('img');
+      console.log(search);
+
+      search.each((i, e) => {
+        // console.log(e);
+        let data_src = e.getAttribute('data-src');
+
+        if(data_src != null){  //If has a valid data source...
+          console.log(e, data_src);
+          e.setAttribute('src', data_src);  //Sets the new source of data to start loading.
+        }
+      });
+    });
   
   })(jQuery); // End of use strict
   

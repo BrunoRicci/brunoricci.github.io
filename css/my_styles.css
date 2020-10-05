@@ -42,6 +42,8 @@
 .carousel-control-next-icon{
   height: 60px;
   width: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
   box-shadow: 1px 1px 2px black;
   background-size: 100%, 100%;
   border-radius: 10%;
@@ -50,7 +52,18 @@
   align-content: center;
 }
 
+.col-lg-8{
+  flex: 0 0 100% !important;
+  max-width: 85% !important;
+}
 
+/* .carousel-item{
+  align-content: center !important;
+  max-height: 90vh !important;
+  width: auto !important;
+  object-fit: cover;
+  margin: 0 auto 1em auto !important; /*Center the image*/
+} */
 
 #about{
     background-color: #ffae00f1;
