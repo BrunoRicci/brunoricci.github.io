@@ -65,16 +65,13 @@
       });
     });
 
-    $(document).ready(function(){
-      console.log('document load ready.');
-      
+    $(document).ready(function(){   // Heavier images lazy load.
+      console.log('Document load ready.');
       var search = $('img');
-
       search.each((i, e) => {
         let data_src = e.getAttribute('data-src');
 
         if(data_src != null){  //If has a valid data source...
-          // console.log(e, data_src);
           e.setAttribute('src', data_src);  //Sets the new source of data to start loading.
         }
       });
