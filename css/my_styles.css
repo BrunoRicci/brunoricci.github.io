@@ -12,8 +12,8 @@
     top: 0px;
     margin: 0px;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     filter: blur(6px);
     overflow: hidden;
 }
@@ -91,10 +91,11 @@
   background-color: #FCBB42 !important;
 }
 
+
 .btn-social, .btn-outline-secondary{
   width: 9rem;
   height: 9rem;
-  padding: 35px;
+  padding: 2rem;
 }
 .btn-outline-secondary:hover{
   background-color: #FCBB42;
