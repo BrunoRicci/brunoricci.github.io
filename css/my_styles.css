@@ -28,6 +28,19 @@
     color: #ffffff;
 }
 
+#see_portfolio{
+  border-radius: 10px;
+  text-decoration: none;
+  color:white; 
+  margin:10px;
+  padding: 5px 10px 15px 10px;
+}
+#see_portfolio:hover{
+  background-color: #ffffff15;
+  transition: 550ms;
+  transform: scale(1.2);
+}
+
 #portfolio{
     background-color: #ffffff;
     /* height: 100vh; */
@@ -76,6 +89,20 @@
 .portfolio .portfolio-item .portfolio-item-caption{
   background-color: #FCBB42 !important;
 }
+
+.btn-social, .btn-outline-secondary{
+  width: 10rem;
+  height: 10rem;
+  padding: 35px;
+}
+.btn-outline-secondary:hover{
+  background-color: #FCBB42;
+}
+.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+  box-shadow: none !important;
+}
+
+
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
     color: #fff;
