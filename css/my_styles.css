@@ -47,29 +47,9 @@
     /* height: 100vh; */
 }
 
-.portfolio-item{
-  /* border: 1px solid black; */
-  box-shadow: 0px 3px 8px #00000083;
-}
 
-.carousel-control-prev-icon, 
-.carousel-control-next-icon{
-  height: 60px;
-  width: 60px;
-  margin-left: 10%;
-  margin-right: 10%;
-  box-shadow: 1px 1px 2px black;
-  background-size: 100%, 100%;
-  border-radius: 10%;
-  /* background-image: none; */
-  background-color: #00000034;
-  align-content: center;
-}
 
-.col-lg-8{
-  flex: 0 0 100% !important;
-  max-width: 85% !important;
-}
+
 
 
 #about{
@@ -81,10 +61,8 @@
 }
 
 .portfolio .portfolio-item .portfolio-item-caption{
-  background-color: #FCBB42 !important;
+  background-color: #fcbb42a8 !important;
 }
-
-
 .btn-outline-secondary:hover{
   background-color: #FCBB42;
 }
@@ -92,10 +70,29 @@
   box-shadow: none !important;
 }
 
+.portfolio-item{
+  /* border: 1px solid rgb(0, 0, 0); */
+  max-width: 75% !important;
+  box-shadow: 0px 3px 8px #00000083;
+  transition: cubic-bezier(.65,.05,.36,1) 250ms;
+}
+.portfolio-item:hover{
+  transform: scale(1.1);
+}
+
+.thumbnail-img{
+  height:100%;
+  width: 100%;
+}
+.thumbnail-title{
+  /* position: absolute !important; */
+  font-style: 'Roboto' !important;
+}
+
 .portfolio-modal-title{
   margin-top:2rem !important;
   margin-left: 15% !important;
-  font-size: calc(2vw + 2vh + 1vmin) !important;
+  font-size: calc(1.5vw + 1.5vh + 1.5vmin) !important;
 }
 .modal-content{
   min-height: 90vh;
@@ -117,6 +114,24 @@
   justify-content: center;
   max-height: 100% !important;
 }
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{
+  height: 60px;
+  width: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 1px 1px 2px black;
+  background-size: 100%, 100%;
+  border-radius: 10%;
+  /* background-image: none; */
+  background-color: #00000034;
+  align-content: center;
+}
+
+.col-lg-8{
+  flex: 0 0 100% !important;
+  max-width: 85% !important;
+}
 
 .img-fluid{
   border-radius: 5px !important;
@@ -136,9 +151,9 @@
 }
 
 .btn-social, .btn-outline-secondary{
-  width: 9rem;
-  height: 9rem;
-  padding: 2rem;
+  width: 9rem !important;
+  height: 9rem !important;
+  padding: 2rem !important;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
