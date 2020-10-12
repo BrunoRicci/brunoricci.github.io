@@ -48,10 +48,6 @@
 }
 
 
-
-
-
-
 #about{
     background-color: #ffae00f1;
     height: 100vh;
@@ -72,18 +68,19 @@
 
 .portfolio-item{
   /* border: 1px solid rgb(0, 0, 0); */
-  max-width: 75% !important;
+  max-width: 90% !important;
   box-shadow: 0px 3px 8px #00000083;
   transition: cubic-bezier(.65,.05,.36,1) 250ms;
 }
 .portfolio-item:hover{
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .thumbnail-img{
   height:100%;
   width: 100%;
 }
+
 .thumbnail-title{
   /* position: absolute !important; */
   font-style: 'Roboto' !important;
@@ -92,7 +89,7 @@
 .portfolio-modal-title{
   margin-top:2rem !important;
   margin-left: 15% !important;
-  font-size: calc(1.5vw + 1.5vh + 1.5vmin) !important;
+  font-size: calc(1.5vw + 1.5vh + 1.0vmin) !important;
 }
 .modal-content{
   min-height: 90vh;
@@ -102,8 +99,30 @@
   padding: calc(1vw + 1vh + 1vmin) !important;
 }
 .modal_responsive{
-  margin: 1rem !important;
+  margin: 3% !important;
   height: 100% !important;
+}
+.tab_width{
+  margin-inline: auto;
+  width: 33.33%;
+  overflow: hidden;
+}
+
+.tab-content{
+  border-width: 2px ;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #dee2e6, 
+      rgba(255, 255, 255, 0)
+    ) 1 100%;
+  border-top: 2px solid #dee2e6;
+
+  min-height: 60vh;
+}
+.nav-tabs{
+  /* border-bottom: none; */
 }
 
 .carousel-inner{
@@ -136,7 +155,7 @@
 .img-fluid{
   border-radius: 5px !important;
   margin:auto;
-  max-height: 70vh !important;
+  max-height: 65vh !important;
   width: auto !important;
   max-width: 100% !important;
   padding: auto;
@@ -144,8 +163,7 @@
 
 .item_description{
   text-align: left;
-  margin: 0rem;
-  margin-top: 0;
+  margin: 5%;
   font-family: 'Arial';
   font-size: 1rem !important;
 }
