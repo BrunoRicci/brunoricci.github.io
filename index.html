@@ -47,9 +47,12 @@
                 </div>
                 <!-- Masthead Subheading-->
                 
-                <p class="masthead-subheading font-weight-bold mb-0">&#8226; Hardware and embedded systems Developer</p>
-                <p class="masthead-subheading font-weight-bold mb-0">&#8226; Software</p>
-                <p class="masthead-subheading font-weight-bold mb-0">&#8226; IoT</p>
+                <div style="//text-align: left;">
+                    <p class="masthead-subheading font-weight-bold mb-0">&#8226; Hardware and embedded systems Developer</p>
+                    <p class="masthead-subheading font-weight-bold mb-0">&#8226; Software</p>
+                    <p class="masthead-subheading font-weight-bold mb-0">&#8226; IoT</p>
+                </div>
+                
                 <!-- Whitespace -->
                 <div style="width:10vw;height: 80px;"></div>
                 <!-- Guide to next section -->
@@ -293,23 +296,27 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane item_description fade show active" id="tab_m1_1" role="tabpanel" aria-labelledby="description-tab">
-                                        These dataloggers were created in order to improve agronomist scientists labour in the research field, 
-                                        capable of being installed in a remote laboratory where periodic samples are taken and saved into local memory
-                                        and daily transmitted via internet to a database.
+                                        The Agro Telemetry System (AGRO-TS) is a comprehensive system for remote lab data control.
+                                        It was designed to maximize the ability of scientists and researchers to collect and store relevant parameters of
+                                        agro-related samples in real time, like temperature and relative humidity.
                                         <br><br>
-                                        &#8226 30 days battery life (with daily transmission).
-                                        <br>
-                                        &#8226 Upto 4 sensors (temperature and humidity were used).
-                                        <br>
-                                        &#8226 10+ years of hourly measurements memory.
-                                        <br>
-                                        &#8226 Wi-Fi connectivity.
-                                        <br>
-                                        &#8226 On-site web-based configuration via Wi-Fi with any device (no need of network).
-                                        <br>
-                                        &#8226 Supports induced sporadic measurements.
-                                        <br>
-                                        &#8226 Micro-USB Chargable.
+                                        AGRO-TS consists of a sensing unit, a data transmission module and a webb app for data visualization.
+                                        <br><br>
+                                        Main Features:
+                                        <br><br>
+                                         &#8226; 30 days battery life (with daily transmission).
+                                         <br>
+                                         &#8226; Up to 4 sensors (temperature and humidity).
+                                         <br>
+                                         &#8226; 10+ years of hourly measurements memory.
+                                         <br>
+                                         &#8226; Wi-Fi connectivity.
+                                         <br>
+                                         &#8226; On-site web-based configuration via Wi-Fi with any device (no need of network).
+                                         <br>
+                                         &#8226; Supports induced sporadic measurements.
+                                         <br>
+                                         &#8226; Micro-USB Chargeable.
                                     </div>
                                     <div class="tab-pane item_description fade" id="tab_m1_2" role="tabpanel" aria-labelledby="technical-tab">
                                         The core of this device is the Espressif ESP8266, which not only provides a microprocessor and wide flash memory to store data, but also Wi-Fi connectivity. 
@@ -612,35 +619,39 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane item_description fade show active" id="tab_m4_1" role="tabpanel" aria-labelledby="description-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
+                                        This device is a programmable alarm clock that allows to control home appliances such as lights and plugs when particular events happen.
+                                        <br>
+                                        It shows the current time and the programmed alarm time, controlled by buttons and a knob. When the alarm is triggered, it 
+                                        emits a sound and turns on a LED strip to light the bedroom, simulating a natural dawn.
+                                        <br><br>
+                                        As the LED strip controller is placed at a fair distance from the logic board, a wire is used for supply and communication. 
+                                        <br><br>The main board also considers the connection of two wireless modules, which provide internet connectivity and enable 
+                                        the communication with other devices.
                                     </div>
                                     <div class="tab-pane item_description fade" id="tab_m4_2" role="tabpanel" aria-labelledby="technical-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
+                                        The Atmega328p is the core of this system. It handles interrupts, communications and the human interface (display, buttons and encoder).
+                                        <br>The timekeeping is assigned to an RTC IC (DS3231) that counts with a backup battery.
+                                        <br><br>
+                                        The RGB LED driver module is handled by the main board, which implies what color and intensity is needed. 
+                                        <br>
+                                        Using PWM and opto-couplers (to isolate the logic from the LED strip external supply) it controls the MOS power transistors 
+                                        that drive the strip.
+                                        <br><br>
+                                        Wireless communications were provided in the board design, having the option to add these features in a future. The main goal of this 
+                                        was to increment the amount of appliances, plugs, lights and sensors to connect, in order to create a more complex an functional domotic 
+                                        system.
+
                                     </div>
                                     <div class="tab-pane item_description fade" id="tab_m4_3" role="tabpanel" aria-labelledby="project-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
+                                        This was a personal project I started in 2014 to learn programming microcontrollers (the first version used a Microchip PIC16F877 and 7-segment displays), 
+                                        and because domotic has always caught my eye.
+                                        <br><br>
+                                        Also I wanted to have the lights in my bedroom turned on smoothly to wake up more naturally instead of rushing out. In addition, I planned to
+                                        make an infrared interface to automatically turn on the heating moments before the alarm triggers, during winter season.
+
                                     </div>
                                 </div>
 
-                                <!-- <h4 class="max-width" style="margin: 1rem 0; text-align: left;">Description</h4>
-                                <p class="max-width item_description">
-                                    This is the core of the smart standard. It's responsible for handling the user interface (LCD display and buttons), 
-                                    acquire the data from the meter, and communicates with external sensors modules and/or smartphone/tablet via BT.
-                                    It also triggers an external camera which is connected with a tablet or a phone.
-                                    <br><br>Finally, it will save all the data gathered to an internal flash memory, which can be read via optical port, using a specific 
-                                    software, which formats it all into a spreadsheet format (.csv).
-                                    <br><br> The board controls the charge of the battery and automatically disconnects it when it reaches its minimum allowable safe voltage.
-                                    <br><br>
-                                    &#8226; Battery powered.
-                                    <br>
-                                    &#8226; Dedicated RTC module for timekeeping.
-                                    <br>
-                                    &#8226; Optical port.
-                                    <br>
-                                    &#8226; Bluetooth connectivity.
-                                    <br>
-                                    &#8226; 2,4GHz RF connectivity (propietary protocol).
-                                </p> -->
                             </div>
                         </div>
                     </div>
@@ -699,400 +710,40 @@
                                       <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab_m5_2" role="tab" aria-controls="profile" aria-selected="false">Technical</a>
                                     </li>
                                     <li class="nav-item tab_width">
-                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab_m1_3" role="tab" aria-controls="contact" aria-selected="false">Project</a>
+                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab_m5_3" role="tab" aria-controls="contact" aria-selected="false">Project</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane item_description fade show active" id="tab_m5_1" role="tabpanel" aria-labelledby="description-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
+                                        Modern SMD technology requires specific equipment to be soldered with high quality joints, given their small dimensions and terminals clearance.
+                                        <br><br>
+                                        This laboratory tool allows to solder electronic components properly, controlling the temperature of the solder iron tip and a hot air gun.
+                                        <br><br>
+                                        It is fully controlled using knobs, to control the aforementioned temperatures and the air flow as needed.                                        
                                     </div>
                                     <div class="tab-pane item_description fade" id="tab_m5_2" role="tabpanel" aria-labelledby="technical-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
+                                        The solder iron is powered with 24V AC, and controlled by a TRIAC + opto-diac, which is also controlled by an Atmel Atmega8 microcontroller using PWM (not PPM).
+                                        The hot air gun heat element, instead, is powered with 220VAC and controlled in the same way.
+                                        <br>
+                                        The controller senses each heating elements (solder iron and heat gun) with their respective sensors; a thermocouple and a PTC RTD, which are analogically processed and amplified.
+                                        Then, each signal is measured by its ADC and the temperature value is calculated.
+                                        <br><br>
+                                        The hot air gun flow is controlled with PWM, which varies the fan speed.
                                     </div>
                                     <div class="tab-pane item_description fade" id="tab_m5_3" role="tabpanel" aria-labelledby="project-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
+                                        This soldering station was a personal project I made in 2017 when I had no money to buy one. I only managed to buy the solder iron and the hot air gun as spare parts, 
+                                        and the components needed to make the pcb.
+                                        <br><br>
+                                        It has allowed me to make excellent quality solders in all my subsequent projects and it still does. Without any doubt, one of the most useful projects I have done.
                                     </div>
                                 </div>
                                 
-                                <!-- <h4 class="max-width" style="margin: 1rem 0; text-align: left;">Description</h4>
-                                <p class="max-width item_description">
-                                    This is the whole device. It's used to test gas meters (and prepared for water too) in-situ without dismounting them from the setup
-                                    , which is a ponderous task. It can also be used in small or remote laboratories as any working standard, becoming handy
-                                    to small utilities companies that otherwise have to rely on farther installations to test their meters, costing time and money. 
-                                    <br><br>
-                                    The device is composed by three main elements: a standard meter, an electronic interface for it, and two or more sensors to compensate
-                                    by temperature and pressure variations (in the case of gas).
-                                    <br>A rotary encoder is implemented for interfacing the mechanical meter with the electronic logic.
-                                    <br><br>
-                                    Measures:
-                                    <br>
-                                    &#8226 Volume (corrected by temp. and pressure)
-                                    <br>
-                                    &#8226; Instantaneous and avg. flow.
-                                    <br>
-                                    &#8226; Relative error.
-                                    <br><br>
-                                    &#8226; Portable.
-                                    <br>
-                                    &#8226; Results can be uploaded to a cloud database.
-                                </p> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="justify-content-around">
-                        <!-- Title and close button -->
-                        <div style="max-width: 80%;">
-                            <h2 style="overflow: hidden;" class="portfolio-modal-title text-secondary text-uppercase m-4" id="portfolioModal6Label">
-                                Sensors board
-                            </h2>
-                        </div>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div class="modal_responsive row justify-content-around">
-                            <div class="col-lg-7 p-0 mb-3">
-                                <div id="carousel_06" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/PyT_3d_01.png" alt="First slide">
-                                      </div>
-                                      
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/PyT_3d_02.png" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/PyT_3d_03.png" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/PyT_3d_04.png" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/PyT_3d_05.png" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/PyT_3d_06.png" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/pyt_proto_01.jpg" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/pyt_proto_02.jpg" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/pyt_real_01.jpg" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/pyt_real_02.jpg" alt="slide">  </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/PyT/pyt_real_03.jpg" alt="slide">  </div>                                         
-                                
-                                    </div>
-                                    <a style="width: 8%;" class="carousel-control-prev" href="#carousel_06" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a style="width: 8%;" class="carousel-control-next" href="#carousel_06" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col mb-1" style="padding: 0% 3%;">
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab_m6_1" role="tab" aria-controls="home" aria-selected="true">Description</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab_m6_2" role="tab" aria-controls="profile" aria-selected="false">Technical</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab_m6_3" role="tab" aria-controls="contact" aria-selected="false">Project</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane item_description fade show active" id="tab_m6_1" role="tabpanel" aria-labelledby="description-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m6_2" role="tabpanel" aria-labelledby="technical-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m6_3" role="tabpanel" aria-labelledby="project-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                </div>
-
-                                <!-- <h4 class="max-width" style="margin: 1rem 0; text-align: left;">Description</h4>
-                                <p class="max-width item_description">
-                                    This board takes measurements from a PT100 temperature sensor (with option to digital ones) and a capacitive pressure sensor.
-                                    <br><br>
-                                    When the master sends it a command via optical port or RF communication, it turns on and effectuates a sample of each sensor,
-                                    then responds with the values obtained.
-                                    <br><br>
-                                    &#8226 Battery powered, charged via USB.
-                                    <br>
-                                    &#8226 Callibrable.
-                                </p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 7-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="justify-content-around">
-                        <!-- Title and close button -->
-                        <div style="max-width: 80%;">
-                            <h2 style="overflow: hidden;" class="portfolio-modal-title text-secondary text-uppercase m-4" id="portfolioModal9Label">
-                                Domotic alarm clock
-                            </h2>
-                        </div>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div class="modal_responsive row justify-content-around">
-                            <div class="col-lg-7 p-0 mb-3">
-                                <div id="carousel_07" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/pcb_complete_01.png" alt="First slide">
-                                      </div>
-                                      
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/pcb_complete_02.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/pcb_complete_02.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/pcb_complete_03.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/pcb_complete_04.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/domotic_complete.jpg" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/domotic_pcb_real_01.jpg" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/domotic_pcb_real_02.jpg" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/domotic_pcb_real_03.jpg" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/led_driver_real_01.jpg" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Domotic/led_driver_real_02.jpg" alt="slide">  </div>                                         
-                                
-                                    </div>
-                                    <a style="width: 8%;" class="carousel-control-prev" href="#carousel_07" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a style="width: 8%;" class="carousel-control-next" href="#carousel_07" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col mb-1" style="padding: 0% 3%;">
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab_m7_1" role="tab" aria-controls="home" aria-selected="true">Description</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab_m7_2" role="tab" aria-controls="profile" aria-selected="false">Technical</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab_m7_3" role="tab" aria-controls="contact" aria-selected="false">Project</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane item_description fade show active" id="tab_m7_1" role="tabpanel" aria-labelledby="description-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m7_2" role="tabpanel" aria-labelledby="technical-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m7_3" role="tabpanel" aria-labelledby="project-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                </div>
-
-                                <!-- <h4 class="max-width" style="margin: 1rem 0; text-align: left;">Description</h4>
-                                <p class="max-width item_description">
-                                    This was a personal project that I started a long time ago in 2014, adding small updates from time to time.
-                                    <br><br>
-                                    It's basically an alarm clock that sends a command via through a wire to a slave which turns on a light (LED strip) and makes quite anoying noises. 
-                                    <br><br>
-                                    It counts with a dedicated RTC module for timekeeping and an classic Atmel MCU which handles everything, all made with my own C libraries.
-                                    <br><br>
-                                    At last I managed to add wireless conectivities with the well known NRF24L01 modules and ESP8266.
-                                    
-                                </p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 8-->
-        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="justify-content-around">
-                        <!-- Title and close button -->
-                        <div style="max-width: 80%;">
-                            <h2 style="overflow: hidden;" class="portfolio-modal-title text-secondary text-uppercase m-4" id="portfolioModal8Label">
-                                Smart standard mobile app
-                            </h2>
-                        </div>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div class="modal_responsive row justify-content-around">
-                            <div class="col-lg-7 p-0 mb-3">
-                                <div id="carousel_08" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/App/app_main_screen.png" alt="First slide">
-                                      </div>
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/App/app_01.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/App/app_connected.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Smart_fluid_reference/App/app_results.png" alt="slide">  </div>                                         
-                                      
-                                    </div>
-                                    <a style="width: 8%;" class="carousel-control-prev" href="#carousel_08" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a style="width: 8%;" class="carousel-control-next" href="#carousel_08" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col mb-1" style="padding: 0% 3%;">
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab_m8_1" role="tab" aria-controls="home" aria-selected="true">Description</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab_m8_2" role="tab" aria-controls="profile" aria-selected="false">Technical</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab_m8_3" role="tab" aria-controls="contact" aria-selected="false">Project</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane item_description fade show active" id="tab_m8_1" role="tabpanel" aria-labelledby="description-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m8_2" role="tabpanel" aria-labelledby="technical-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m8_3" role="tabpanel" aria-labelledby="project-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                </div>
-
-                                <!-- <h4 class="max-width" style="margin: 1rem 0; text-align: left;">Description</h4>
-                                <p class="max-width item_description">
-                                    Android app to control the smart pattern. It connects to the device's bluetooth and displays all the information 
-                                    such as data and results.
-                                    <br><br>
-                                    It also exports the data gathered to a spreadsheet format (.csv) which is automatically synchronized with the cloud, 
-                                    useful to analyze these remotelly from offices or so.
-                                    
-                                </p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 9-->
-        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal9Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="justify-content-around">
-                        <!-- Title and close button -->
-                        <div style="max-width: 80%;">
-                            <h2 style="overflow: hidden;" class="portfolio-modal-title text-secondary text-uppercase m-4" id="portfolioModal7Label">
-                                Soldering station
-                            </h2>
-                        </div>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <div class="modal_responsive row justify-content-around">
-                            <div class="col-lg-7 p-0 mb-3">
-                                <div id="carousel_09" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                      <div class="carousel-item active">
-                                        <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Solder_station/pcb_05.png" alt="First slide">
-                                      </div>
-                                      
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Solder_station/pcb_02.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Solder_station/pcb_03.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Solder_station/pcb_04.png" alt="slide">  </div>                                                                             
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Solder_station/pcb_06.png" alt="slide">  </div>                                         
-                                      <div class="carousel-item"> <img class="img-fluid d-block w-100" src="/assets/img/spinner.svg" data-src="assets/img/portfolio/images/Solder_station/pcb_07.png" alt="slide">  </div>                                         
-                                    
-                                    </div>
-                                    <a style="width: 8%;" class="carousel-control-prev" href="#carousel_09" role="button" data-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a style="width: 8%;" class="carousel-control-next" href="#carousel_09" role="button" data-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col mb-1" style="padding: 0% 3%;">
-
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab_m9_1" role="tab" aria-controls="home" aria-selected="true">Description</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab_m9_2" role="tab" aria-controls="profile" aria-selected="false">Technical</a>
-                                    </li>
-                                    <li class="nav-item tab_width">
-                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab_m9_3" role="tab" aria-controls="contact" aria-selected="false">Project</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane item_description fade show active" id="tab_m9_1" role="tabpanel" aria-labelledby="description-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m9_2" role="tabpanel" aria-labelledby="technical-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                    <div class="tab-pane item_description fade" id="tab_m9_3" role="tabpanel" aria-labelledby="project-tab">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptate!
-                                    </div>
-                                </div>
-
-                                <!-- <h4 class="max-width" style="margin: 1rem 0; text-align: left;">Description</h4>
-                                <p class="max-width item_description">
-                                    This is my homemade soldering station, another project that I made with almost no money in 2017, which helped me
-                                    in all my future projects.
-                                    I only bought the solder and the heat gun and made the rest by myself, and I am proud to say that it still works really
-                                    well.
-                                    <br><br>
-                                    The firmware was one of my firsts using Atmel chips.
-                                    <br><br>
-                                    &#8226; Solder temperature control.
-                                    <br>
-                                    &#8226; Heat gun temperature control.
-                                    <br>
-                                    &#8226; Heat gun air flow control.
-                                    <br>
-                                    &#8226; No switches to turn the heaters on/off, just potentiometers.  
-                                    <br>
-                                    &#8226; 24V output for fume extractor.                              
-                                </p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        </div>        
 
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
