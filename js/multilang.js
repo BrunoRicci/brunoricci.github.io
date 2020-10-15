@@ -4,8 +4,8 @@
 
 var text_multilang ={
 	"mltxt_0": {
-		"en": "sssssssssss",
-		"es": ""
+		"en": "Bruno Ricci",
+		"es": "Bruno Ricci"
 	},
 	"mltxt_1": {
 		"en": "BRUNO RICCI",
@@ -53,7 +53,7 @@ var text_multilang ={
 	},
 	"mltxt_12": {
 		"en": "Agro Telemetry System",
-		"es": "Sistema de telemetría Agro"
+		"es": "Sistema de Telemetría Agro"
 	},
 	"mltxt_13": {
 		"en": "Flow Calibration Unit",
@@ -189,15 +189,15 @@ var text_multilang ={
 	},
 	"mltxt_46": {
 		"en": "Description",
-		"es": ""
+		"es": "Descripción"
 	},
 	"mltxt_47": {
 		"en": "Technical",
-		"es": ""
+		"es": "Técnico"
 	},
 	"mltxt_48": {
 		"en": "Project",
-		"es": ""
+		"es": "Proyecto"
 	},
 	"mltxt_49": {
 		"en": "The Flow Calibration Unit (FCU) is a low-cost working standard for metrology (gas and water meters). ts small dimensions allows it to be easily transported to different places, from laboratories to remote locations where a meter could be placed.",
@@ -429,28 +429,31 @@ var text_multilang ={
 	}
 }
 
-var list_texts = ($('[ml_text]'));
-console.log(list_texts[0].attributes);
 
-var lang = 'es';
-for (var i = 0; i < list_texts.length; i++) {
-    // let text = list_texts[i].textContent;
-    // // console.log(list_texts[i],text);
-    // if (text != undefined) {
-    //     text_multilang['mltxt_'+i.toString()]=
-    //     {   'en': text,
-    //         'es': ''
-    //     };
-    // }
+var language = 'en';
+$('#lang_button').click(function(){
+    console.log('change lang');
+    if (language == 'en')
+        language = 'es';
+    else
+        language = 'en';
 
-    // var text = '';
-    // if (text_multilang[('mltxt_'+i)][lang] = '') { //If text not defined
-    //     text = text_multilang[('mltxt_'+i)]["en"];
-    // }else{
-    //     text = text_multilang[('mltxt_'+i)][lang];
-    // }
-    // console.log('mltxt_'+i,text_multilang[('mltxt_'+i)], text);
+    loadLanguage(language);
+});
 
-    // list_texts[i].textContent = text;
+function loadLanguage(lang){
+    var list_texts = ($('[ml_text]'));
+
+    for (var i = 0; i < list_texts.length; i++) {
+       
+        var text = '';
+        if (text_multilang[('mltxt_'+i)][lang] == '') { //If text not defined
+            text = text_multilang[('mltxt_'+i)]['en'];
+        }else{
+            text = text_multilang[('mltxt_'+i)][lang];
+        }
+        // console.log('mltxt_'+i,text_multilang[('mltxt_'+i)], text, list_texts[i].attributes.ml_text);
+    
+        list_texts[i].textContent = text;
+    }
 }
-
