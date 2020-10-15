@@ -50,7 +50,8 @@
 
 #about{
     background-color: #ffae00f1;
-    height: 100vh;
+    min-height: 100vh;
+    font-size: 1.3rem;
 }
 .bg-primary {
     background-color: #ffd76b !important;
@@ -68,7 +69,7 @@
 
 .portfolio-item{
   /* border: 1px solid rgb(0, 0, 0); */
-  max-width: 90% !important;
+  max-width: 25rem !important;
   box-shadow: 0px 3px 8px #00000083;
   transition: cubic-bezier(.65,.05,.36,1) 250ms;
 }
@@ -107,6 +108,8 @@
   margin-inline: auto;
   width: 33.33%;
   overflow: hidden;
+  font-size: 100%;
+  font-weight: 700;
 }
 
 .tab-content{
