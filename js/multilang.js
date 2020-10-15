@@ -93,7 +93,7 @@ var text_multilang ={
 	},
 	"mltxt_22": {
 		"en": "Currently pursuing a bachelor's degree in Electronics Engineering at Polytechnic University of Turin.",
-		"es": "Actualmente me encuentro en curso de la Licenciatura en ingeniería Electrónica, en el Politécnico di Torino."
+		"es": "Actualmente me encuentro en curso de la Licenciatura en Ingeniería Electrónica, en el Politécnico di Torino."
 	},
 	"mltxt_23": {
 		"en": "I hold a high school diploma in Electronics (2010-2015).",
@@ -119,9 +119,17 @@ var text_multilang ={
 		"en": "Project",
 		"es": "Proyecto"
 	},
+	"mltxt_28_2": {
+		"en": "The Agro Telemetry System (AGRO-TS) is a comprehensive system for remote lab data monitoring. It was designed to maximize the ability of scientists and researchers to collect, store and analyze relevant parameters of agro-related samples remotely, like temperature and relative humidity.",
+		"es": "El sistema de telemetría agro es un sistema integral para el monitoreo remoto de datos de labotatorio. Fue diseñado para asistir a científicos e investigadores en la recolección y análisis de parámetros relevantes relacionados con la agricultura, como temperatura y humedad relativa, de manera remota."
+	},
 	"mltxt_29": {
 		"en": "AGRO-TS consists of a data acquisition+transmission module and a web app for data visualization.",
 		"es": "AGRO-TS consiste en un módulo de adquisición y transmisión de datos y una aplicación web para la visualización de los mismos."
+	},
+	"mltxt_29_2": {
+		"en": "Main Features:",
+		"es": "Características:"
 	},
 	"mltxt_30": {
 		"en": "• 30 days battery life (with daily transmission).",
@@ -129,7 +137,7 @@ var text_multilang ={
 	},
 	"mltxt_31": {
 		"en": "• Up to 4 sensors (temperature and humidity).",
-		"es": "• Hasta 4 sensores (temperatua y humedad)."
+		"es": "• Hasta 4 sensores (temperatura y humedad)."
 	},
 	"mltxt_32": {
 		"en": "• 10+ years of hourly measurements memory.",
@@ -153,7 +161,7 @@ var text_multilang ={
 	},
 	"mltxt_37": {
 		"en": "The core of this device is the Espressif ESP8266 inside an ESP-12 module, which not only provides a microcontroller and wide flash memory to store data, but also Wi-Fi connectivity. ",
-		"es": "El corazón de este dispositivo es el Espressif ESP8266 dentro del módulo ESP-12, el cual no solo cuenta con un microcontrolador y amplia memoria flash para guardar datos, sino que también conectividad Wi-Fi."
+		"es": "El corazón de este dispositivo es el Espressif ESP8266 dentro del módulo ESP-12, el cual no solo cuenta con un microcontrolador y amplia memoria flash para guardar datos, sino que también con conectividad Wi-Fi."
 	},
 	"mltxt_38": {
 		"en": "Staying in deep-sleep mode (60uA) and waking up every hour to take the sensors samples it manages to make the 150mAh battery last as needed.",
@@ -164,8 +172,8 @@ var text_multilang ={
 		"es": "Una máquina de estados se encarga del chequeo de la batería, de tomar las mediciones y de guardarlas en la memoria RTC (ya que la RAM se pierde durante el modo deep-sleep) y luego en la flash cuando ésta se llena, para así evitar malgastar ciclos de escritura de esta última. Además maneja la conexión a la red y al servidor, y el envío de los paqueres de datos."
 	},
 	"mltxt_40": {
-		"en": "Finally, the device connects to a defined network and sends the data packets via HTTP protocol to the defined server. These parameters can be set in the configuration mode, which generates an AP from the device where any device (PC, tablet, phone) can be connected to modify them with a web based graphic interface.",
-		"es": "Finalmente el dispositivo se conecta a una red predefinida y envía los paquetes mediante protocolo HTTP al servidor indicado. Estos parámetros se pueden modificar en el modo de configuración, el cual genera un AP desde el mismo dispositivo, al que cualquier dispositivo (PC, tablet, móvil) se puede conectar para hacerlo mediante una interfaz web."
+		"en": "Finally, the device connects to a defined network and sends the data packets via HTTP protocol to the defined server. These parameters can be set in the configuration mode, which generates an AP where any device (PC, tablet, phone) can be connected to modify them with a web based graphic interface.",
+		"es": "Finalmente el dispositivo se conecta a una red predefinida y envía los paquetes mediante protocolo HTTP al servidor indicado. Estos parámetros se pueden modificar en el modo de configuración, el cual genera un AP al que cualquier dispositivo (PC, tablet, móvil) se puede conectar para hacerlo mediante una interfaz web."
 	},
 	"mltxt_41": {
 		"en": "Development:",
@@ -201,15 +209,15 @@ var text_multilang ={
 	},
 	"mltxt_49": {
 		"en": "The Flow Calibration Unit (FCU) is a low-cost working standard for metrology (gas and water meters). ts small dimensions allows it to be easily transported to different places, from laboratories to remote locations where a meter could be placed.",
-		"es": "La FCU es un patrón de trabajo de bajo costo para metrología (medidores de gas y agua). Sus reducidas dimensiones le permiten ser transportado fácilmente a diferentes lugares, desde laboratorios hasta lugares remotos donde un medidor podría encontrarse."
+		"es": "La FCU es un patrón de trabajo de bajo costo para metrología (medidores de gas y agua). Sus reducidas dimensiones le permiten ser transportado fácilmente a diferentes lugares, desde laboratorios hasta locaciones remotas donde un medidor podría encontrarse."
 	},
 	"mltxt_50": {
 		"en": "Taking into account this advantages, the FCU comes in handy to small utilities companies that are bounded to rely on remote laboratories, thus having higher time and budget costs.",
 		"es": "Teniendo en cuenta estas ventajas, la FCU es muy práctica para pequeñas empresas de servicios públicos que se ven obligadas a depender de laboratorios lejanos, conllevándoles mayores costos de tiempo y recursos económicos."
 	},
 	"mltxt_51": {
-		"en": "Composed of three main elements: a standard meter, an electronic interface and sensors, the FCU permits the user to obtain very useful data from the meter being tested, such as flow, volume, pressure, temperature and relative error.",
-		"es": "Compuesta de tres elementos: un medidor patrón, una interfaz electrónica y sensores, la FCU permite al usuario obtener información muy útil acerca del medidor que se ensaya, como el caudal, volumen, presiones, temperaturas y error relativo."
+		"en": "Composed of three main elements: a standard meter, an electronic interface and sensors, the FCU permits the user to obtain very useful data from the meter being tested, such as flow, volume, pressure, temperature and relative error, allowing to plot a calibration curve.",
+		"es": "Compuesta de tres elementos: un medidor patrón, una interfaz electrónica y sensores, la FCU permite al usuario obtener información muy útil acerca del medidor que se ensaya, como el caudal, volumen, presiones, temperaturas y error relativo, permitiendo trazar una curva de calibración."
 	},
 	"mltxt_52": {
 		"en": "The interface between the meter and the electronics is a 100-step optical rotary encoder which is read by an Atmega328p MCU.",
@@ -217,7 +225,7 @@ var text_multilang ={
 	},
 	"mltxt_53": {
 		"en": "This interface controls a display and buttons which are used by the laboratory technician to control the device, and communicates with two (or more) sensor modules via optical port (connected with optical fibre) or wirelessly via 2,4GHz RF.",
-		"es": "Esta interfaz controla un visor y botones que son usados por el técnico de laboratorio para controlar el dispositivo, y se comunica con dos o más módulos sensores a través de un puerto óptico (conectados por fibra óptica) o inalámbricamente mediante radiofrecuencia a 2,4GHz"
+		"es": "Ésta controla un visor y botones que son usados por el técnico de laboratorio para controlar el dispositivo, y se comunica con dos o más módulos sensores a través de un puerto óptico (conectados por fibra óptica) o inalámbricamente mediante radiofrecuencia a 2,4GHz"
 	},
 	"mltxt_54": {
 		"en": "RF communication is an additional feature consisting in modules that are be plugged into the boards, controlled through SPI.",
@@ -232,7 +240,7 @@ var text_multilang ={
 		"es": "Todos los resultados de los ensayos son guardados en una memoria EEPROM I2C (hasta 500 ensayos) y se leen mediante una computadora con un software, el cual los guarda en formato \".csv\"."
 	},
 	"mltxt_57": {
-		"en": "In addition, it can be controlled with the mobile app via bluetooth, which also displays all the live data and the results. \n                                            The data is stored in the phone/tablet too, and synchronised to a cloud drive.",
+		"en": "In addition, it can be controlled with the mobile app via bluetooth, which also displays all the live data and the results. The data is stored in the phone/tablet too, and synchronised to a cloud drive.",
 		"es": "Además, el dispositivo se puede controlar desde la aplicación móvil mediante bluetooth, la cual también muestra toda la información en tiempo real y los resultados."
 	},
 	"mltxt_58": {
@@ -292,8 +300,8 @@ var text_multilang ={
 		"es": "Cuando la bicicleta no se está moviendo (como esperando al semáforo) la energía se obtiene de un supercapacitor, que mantendrá las luces funcionando por hasta 5 minutos."
     },
 	"mltxt_72": {
-		"en": "The device is composed of a frontal light (blinking white LED + 2 turning lights) and a rear light (blinking red LED + brake LED + turning lights) that the power circuitry and logic share the cabinet with. The frontal light also counts with buttons to toggle the turning lights using one thumb, without the need of releasing the handle.",
-		"es": "El dispositivo está formado por una luz frontal (LED blanco pulsante + 2 luces de giro) y una luz trasera (LED rojo pulsante + luz de freno + luces de giro) con el circuito de potencia y la lógica integrados a ella. La luz frontal también cuenta con botones para controlar las luces de giro usando el pulgar, sin necesidad de soltar el manubrio."
+		"en": "The device is composed of a frontal light (blinking white LED + 2 turning lights) which counts with buttons to toggle the turning lights using one thumb, without the need of releasing the handle, and a rear light (blinking red LED + brake LED + turning lights) that the power circuitry and logic share the cabinet with.",
+		"es": "El dispositivo está formado por una luz frontal (LED blanco pulsante + 2 luces de giro) con botones para controlar las luces de giro usando el pulgar, sin necesidad de soltar el manubrio, y una luz trasera (LED rojo pulsante + luz de freno + luces de giro) con el circuito de potencia y la lógica integrados a ella."
     },
     "mltxt_73": {
 		"en": "The energy is obtained from a DC motor placed along the wheel rotation. The voltage generated is filtered and then linearly regulated to 5.1V, which will charge the supercapacitor and also supply the energy used by the logic and the lights.",
@@ -329,11 +337,11 @@ var text_multilang ={
 	},
 	"mltxt_81": {
 		"en": "Description",
-		"es": "Descripción."
+		"es": "Descripción"
 	},
 	"mltxt_82": {
 		"en": "Technical",
-		"es": "Técnico."
+		"es": "Técnico"
 	},
 	"mltxt_83": {
 		"en": "Project",
@@ -369,15 +377,15 @@ var text_multilang ={
 	},
 	"mltxt_91": {
 		"en": "Wireless communications were provided in the board design, having the option to add these features in a future. The main goal of this was to increment the amount of appliances, plugs, lights and sensors to connect, in order to create a more complex and functional domotic system.",
-		"es": "Se previeron las comunicaciones inalámbricas en el diseño de la placa, dejando la opción de añadir éstas en un futuro. El objetivo de esto era incrementar la cantidad de aparatos, enchifes, luces y sensores que conectar, para crear un sistema de domótica más complejo y útil."
+		"es": "Se previeron las comunicaciones inalámbricas en el diseño de la placa, dejando la opción de añadir éstas en un futuro. El objetivo de esto era incrementar la cantidad de aparatos, enchufes, luces y sensores que conectar, para crear un sistema de domótica más complejo y útil."
 	},
 	"mltxt_92": {
 		"en": "This was a personal project I started in 2014 to learn programming microcontrollers (the first version used a Microchip PIC16F877 and 7-segment displays), and because domotic has always caught my eye.",
-		"es": "Este fue un proyecto personal que empecé en el año 2014 para aprender a programar microcontroladores (para la primera versión usé un PIC16F877 con displays de 7 segmentos), y además porque la domótica siempre me llamó la atención."
+		"es": "Este fue un proyecto personal que empecé en el año 2014 para aprender a programar microcontroladores (para la primera versión usé un PIC16F877 con displays de 7 segmentos), y porque la domótica siempre me llamó la atención."
 	},
 	"mltxt_93": {
 		"en": "Also I wanted to have the lights in my bedroom turned on smoothly to wake up more naturally instead of rushing out. In addition, I planned to make an infrared interface to automatically turn on the heating moments before the alarm triggers, during winter season.",
-		"es": "Además, quería que las luces de mi habitación se prendieran paulatinamente para despertar más naturalmente en vez de salir corriendo. Adicionalmente había planeado hacer una interfaz infrarroja para encender la calefacción de forma automática unos momentos antes de que la alarma se dispare, durante el invierno."
+		"es": "Además, quería que las luces de mi habitación se prendieran paulatinamente para despertar más naturalmente en vez de salir corriendo hacia la rutina. Adicionalmente había planeado hacer una interfaz infrarroja para encender la calefacción de forma automática unos momentos antes de que la alarma se dispare, durante el invierno."
 	},
 	"mltxt_94": {
 		"en": "Soldering station",
@@ -442,18 +450,31 @@ $('#lang_button').click(function(){
 });
 
 function loadLanguage(lang){
-    var list_texts = ($('[ml_text]'));
+	var list_texts = ($('[data-mltext]'));
+	console.log(list_texts);
 
     for (var i = 0; i < list_texts.length; i++) {
-       
-        var text = '';
-        if (text_multilang[('mltxt_'+i)][lang] == '') { //If text not defined
-            text = text_multilang[('mltxt_'+i)]['en'];
+	   
+		var sel = list_texts[i].attributes['data-mltext'].nodeValue;
+		
+		var text = '';
+        if (text_multilang[sel][lang] == '') { //If text not defined
+            text = text_multilang[sel]['en'];
         }else{
-            text = text_multilang[('mltxt_'+i)][lang];
+			text = text_multilang[sel][lang];
         }
-        // console.log('mltxt_'+i,text_multilang[('mltxt_'+i)], text, list_texts[i].attributes.ml_text);
-    
         list_texts[i].textContent = text;
+		
+		console.log(sel, text);
+
+
+        // var text = '';
+        // if (text_multilang[('mltxt_'+i)][lang] == '') { //If text not defined
+        //     text = text_multilang[('mltxt_'+i)]['en'];
+        // }else{
+        //     text = text_multilang[('mltxt_'+i)][lang];
+        // }
+        // // console.log('mltxt_'+i,text_multilang[('mltxt_'+i)], text, list_texts[i].attributes.ml_text);
+        // list_texts[i].textContent = text;
     }
 }
