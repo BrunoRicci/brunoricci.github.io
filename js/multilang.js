@@ -451,12 +451,12 @@ $('#lang_button').click(function(){
 
 function loadLanguage(lang){
 	var list_texts = ($('[data-mltext]'));
-	console.log(list_texts);
-
+	console.log($('#lang_icon').attributes);
+	$('#lang_icon').attr('src', '/assets/img/lang_'+lang+'.svg');
+	$('#lang_icon').attr('alt', lang);
     for (var i = 0; i < list_texts.length; i++) {
-	   
 		var sel = list_texts[i].attributes['data-mltext'].nodeValue;
-		
+
 		var text = '';
         if (text_multilang[sel][lang] == '') { //If text not defined
             text = text_multilang[sel]['en'];
@@ -464,17 +464,5 @@ function loadLanguage(lang){
 			text = text_multilang[sel][lang];
         }
         list_texts[i].textContent = text;
-		
-		console.log(sel, text);
-
-
-        // var text = '';
-        // if (text_multilang[('mltxt_'+i)][lang] == '') { //If text not defined
-        //     text = text_multilang[('mltxt_'+i)]['en'];
-        // }else{
-        //     text = text_multilang[('mltxt_'+i)][lang];
-        // }
-        // // console.log('mltxt_'+i,text_multilang[('mltxt_'+i)], text, list_texts[i].attributes.ml_text);
-        // list_texts[i].textContent = text;
     }
 }

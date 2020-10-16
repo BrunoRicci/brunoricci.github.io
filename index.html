@@ -26,7 +26,18 @@
                     <li class="nav-item mx-2 mx-lg-2"><a class="nav-link py-3 px-3 px-lg-3 rounded js-scroll-trigger" href="#portfolio" data-mltext="mltxt_3">Portfolio</a></li>
                     <li class="nav-item mx-2 mx-lg-2"><a class="nav-link py-3 px-3 px-lg-3 rounded js-scroll-trigger" href="#about" data-mltext="mltxt_4">About Me</a></li>
                     <li class="nav-item mx-2 mx-lg-2"><a class="nav-link py-3 px-3 px-lg-3 rounded js-scroll-trigger" href="#contact" data-mltext="mltxt_5">Contact</a></li>
-                    <button type="button" class="btn btn-info" id="lang_button">LANG</button>
+                    <!-- <button type="button" class="btn btn-info" id="lang_button">LANG</button> -->
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle ml-5" id="lang_selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="/assets/img/lang_en.svg" id="lang_icon" class="p-1" alt="LANG" height="40rem" width="40rem">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="lang_selector">
+                            <button class="dropdown-item" onclick="loadLanguage('en')">EN</button>
+                            <button class="dropdown-item" onclick="loadLanguage('es')">ES</button>
+                        </div>
+                      </div>
+
                 </ul>
             </div>
         </div>
@@ -43,7 +54,7 @@
             </div>
             <!-- Masthead Subheading-->
             
-            <div style="//text-align: left;">
+            <div>
                 <p class="masthead-subheading font-weight-bold mb-0" data-mltext="mltxt_7">• Hardware and embedded systems Developer</p>
                 <p class="masthead-subheading font-weight-bold mb-0" data-mltext="mltxt_8">• Software</p>
                 <p class="masthead-subheading font-weight-bold mb-0" data-mltext="mltxt_9">• IoT</p>
