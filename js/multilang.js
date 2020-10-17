@@ -76,8 +76,8 @@ var text_multilang = {
 		"es": "Sobre mí"
 	},
 	"mltxt_18": {
-		"en": "I'm a passionate hardware and software developer with 4+ years experience. Eager to stay in tune with the latest technologies. ",
-		"es": "Soy un desarrollador apasionado del hardware y software con más de 4 años de experiencia. Siempre entusiasmado de estar al tanto de las últimas tecnologías."
+		"en": "I'm a passionate hardware and software developer with 4+ years experience, eager to stay in tune with the latest technologies. ",
+		"es": "Soy un desarrollador apasionado del hardware y software con más de 4 años de experiencia, entusiasmado de estar al tanto de las últimas tecnologías."
 	},
 	"mltxt_19": {
 		"en": "Strong supporter of the 'continuous learning' and 'learning by doing' approaches.",
@@ -438,9 +438,6 @@ var text_multilang = {
 }
 
 
-
-
-
 function getLangUrl(){
 	var url = window.location.search;
 	var urlparams = new URLSearchParams(url);
@@ -449,7 +446,7 @@ function getLangUrl(){
 		var language = urlparams.get('lang');
 	else
 		var language = 'en';
-
+	
 	console.log('language: ',language);
 	loadLanguage(language);
 }
@@ -457,7 +454,6 @@ function getLangUrl(){
 
 function loadLanguage(lang){
 	var list_texts = ($('[data-mltext]'));
-	console.log($('#lang_icon').attributes);
 	$('#lang_icon').attr('src', '/assets/img/lang_'+lang+'.svg');
 	$('#lang_icon').attr('alt', lang);
     for (var i = 0; i < list_texts.length; i++) {

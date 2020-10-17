@@ -99,10 +99,12 @@
 }
 .modal-content{
   min-height: 90vh;
+  height: auto;
 }
 
 .modal-body{
-  padding: calc(1vw + 1vh + 1vmin) !important;
+  /* padding: calc(1vw + 1vh + 1vmin) !important; */
+  padding:0;
 }
 .modal_responsive{
   margin: 3% !important;
