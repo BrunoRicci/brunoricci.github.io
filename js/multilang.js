@@ -440,25 +440,20 @@ var text_multilang = {
 
 
 
-var url = window.location.search;
-var urlparams = new URLSearchParams(url);
 
-if (urlparams.has('lang') && urlparams.get('lang')!= undefined)
-	var language = urlparams.get('lang');
-else
-	var language = 'en';
+function getLangUrl(){
+	var url = window.location.search;
+	var urlparams = new URLSearchParams(url);
 
-console.log('language: ',language);
-loadLanguage(language);
+	if (urlparams.has('lang') && urlparams.get('lang')!= undefined)
+		var language = urlparams.get('lang');
+	else
+		var language = 'en';
 
+	console.log('language: ',language);
+	loadLanguage(language);
+}
 
-$('#lang_button').click(function(){
-    if (language == 'en')
-        language = 'es';
-    else
-        language = 'en';
-    loadLanguage(language);
-});
 
 function loadLanguage(lang){
 	var list_texts = ($('[data-mltext]'));
@@ -477,3 +472,19 @@ function loadLanguage(lang){
         list_texts[i].textContent = text;
     }
 }
+
+
+$('#lang_button').click(function(){
+    if (language == 'en')
+        language = 'es';
+    else
+        language = 'en';
+    loadLanguage(language);
+});
+
+
+
+
+
+
+

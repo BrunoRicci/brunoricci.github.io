@@ -67,6 +67,8 @@
 
     $(document).ready(function(){   // Heavier images lazy load.
       console.log('Document load ready.');
+      getLangUrl();
+      
       var search = $('img');
       search.each((i, e) => {
         let data_src = e.getAttribute('data-src');
