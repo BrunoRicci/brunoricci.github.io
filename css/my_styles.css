@@ -1,3 +1,7 @@
+.dropdown-item .dropdown_language{
+  background-color: black;
+}
+
 #main_div{
     padding: 0px;
     margin: 0px;
@@ -124,9 +128,6 @@
   border-top: 2px solid #dee2e6;
 
   min-height: 60vh;
-}
-.nav-tabs{
-  /* border-bottom: none; */
 }
 
 .carousel-inner{

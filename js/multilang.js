@@ -2,7 +2,7 @@
 // "ml_text" attribute allows to select each text field and fill it with its proper content with selected language.
 
 
-var text_multilang ={
+var text_multilang = {
 	"mltxt_0": {
 		"en": "Bruno Ricci",
 		"es": "Bruno Ricci"
@@ -76,8 +76,8 @@ var text_multilang ={
 		"es": "Sobre mí"
 	},
 	"mltxt_18": {
-		"en": "Passionate hardware and software developer with 4+ years experience. Eager to stay in tune with the latest technologies. ",
-		"es": "Desarrollador apasionado del hardware y software con más de 4 años de experiencia. Siempre entusiasmado de estar al tanto de las últimas tecnologías."
+		"en": "I'm a passionate hardware and software developer with 4+ years experience. Eager to stay in tune with the latest technologies. ",
+		"es": "Soy un desarrollador apasionado del hardware y software con más de 4 años de experiencia. Siempre entusiasmado de estar al tanto de las últimas tecnologías."
 	},
 	"mltxt_19": {
 		"en": "Strong supporter of the 'continuous learning' and 'learning by doing' approaches.",
@@ -97,7 +97,7 @@ var text_multilang ={
 	},
 	"mltxt_23": {
 		"en": "I hold a high school diploma in Electronics (2010-2015).",
-		"es": "Poseo un título de Técnico en electrónica (2010-2015)."
+		"es": "Poseo un título de Técnico en Electrónica (2010-2015)."
 	},
 	"mltxt_24": {
 		"en": "Let's keep in touch",
@@ -438,14 +438,25 @@ var text_multilang ={
 }
 
 
-var language = 'en';
+
+
+var url = window.location.search;
+var urlparams = new URLSearchParams(url);
+
+if (urlparams.has('lang') && urlparams.get('lang')!= undefined)
+	var language = urlparams.get('lang');
+else
+	var language = 'en';
+
+console.log('language: ',language);
+loadLanguage(language);
+
+
 $('#lang_button').click(function(){
-    console.log('change lang');
     if (language == 'en')
         language = 'es';
     else
         language = 'en';
-
     loadLanguage(language);
 });
 
