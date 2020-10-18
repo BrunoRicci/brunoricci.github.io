@@ -57,7 +57,7 @@ var text_multilang = {
 	},
 	"mltxt_13": {
 		"en": "Flow Calibration Unit",
-		"es": "Unidad de Clibración de Caudal"
+		"es": "Unidad de Calibración de Caudal"
 	},
 	"mltxt_14": {
 		"en": "Battery-free Bike Lights",
@@ -333,7 +333,7 @@ var text_multilang = {
 	},
 	"mltxt_80": {
 		"en": "Domotic alarm clock",
-		"es": "Despertador domótico."
+		"es": "Despertador domótico"
 	},
 	"mltxt_81": {
 		"en": "Description",
@@ -464,7 +464,7 @@ function loadLanguage(lang){
             text = text_multilang[sel]['en'];
         }else{
 			text = text_multilang[sel][lang];
-        }
+		}
         list_texts[i].textContent = text;
     }
 }
