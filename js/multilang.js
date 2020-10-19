@@ -461,12 +461,17 @@ function loadLanguage(lang){
 
 		var text = '';
         if (text_multilang[sel][lang] == '') { //If text not defined
-            text = text_multilang[sel]['en'];
+			text = text_multilang[sel]['en'];
         }else{
 			text = text_multilang[sel][lang];
 		}
+
         list_texts[i].textContent = text;
-    }
+	}
+	if(lang == 'en')
+		$('#href_linkedin').attr('href', 'https://www.linkedin.com/in/bruno-ricci-8b360b124/?locale=en_US');
+	if(lang == 'es')
+		$('#href_linkedin').attr('href', 'https://www.linkedin.com/in/bruno-ricci-8b360b124/?locale=es_ES');
 }
 
 
